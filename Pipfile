@@ -5,10 +5,11 @@ name = "pypi"
 
 [packages]
 pymongo = "*"
+"e1839a8" = {path = ".", editable = true}
+dnspython = "*"
 
 [dev-packages]
 pytest = "*"
-"e1839a8" = {path = ".", editable = true}
 
 [requires]
 python_version = "3.6"
