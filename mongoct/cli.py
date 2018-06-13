@@ -12,7 +12,6 @@ def run(database, collection, mongodb_uri):
     db = client.get_database(database)
     col = db.get_collection(collection)
     cursor = col.watch(full_document="updateLookup")
-    col.wa
 
     with cursor as stream:
         for change in stream:
