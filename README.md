@@ -1,6 +1,7 @@
 # mongoct
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+[![PyPI version](https://badge.fury.io/py/mongoct.svg)](https://badge.fury.io/py/mongoct)
 
 MongoDB Change Streams tracker. Using `mongoct` allows you to pipe the MongoDB collection changes to another program or file.
 
