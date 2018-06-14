@@ -12,6 +12,6 @@ setup(
     author_email="davidgasquez@buffer.com",
     url="https://github.com/bufferapp/mongoct",
     keywords=["mongodb", "change-stream", "crawler"],
-    install_requires=["pymongo", "click"],
+    install_requires=["pymongo", "click", "dnspython"],
     entry_points={"console_scripts": ["mongoct=mongoct.cli:run"]},
 )
