@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
-MongoDB Change Streams tracker.
+MongoDB Change Streams tracker. Using `mongoct` allows you to pipe the MongoDB collection changes to another program or file.
 
 ## Installation
 
@@ -14,7 +14,7 @@ $ pip install mongoct
 
 ## Quickstart
 
-Before executing the command line tool you'll need a MongoDB URI connection in your environment (`MONGODB_URI`).
+Before executing the command line tool you'll need a MongoDB URI connection in your environment (`MONGODB_URI`)¹.
 
 Tracking changes in a certain collection is as easy as running the following command:
 
@@ -22,10 +22,8 @@ Tracking changes in a certain collection is as easy as running the following com
 $ mongoct company posts
 ```
 
-Changes will start flowing as they're applied to the `post` collection in the `company` database.
+Changes will start flowing as JSON at the same time they're applied to the `post` collection in the `company` database.
 
-Alternatively, you can also specify the MongoDB URI as an argument:
+You can now pipe the data to another program like [`jq`](https://stedolan.github.io/jq/) or save it to a file for latter processing.
 
-```bash
-$ mongoct company posts "mongodb://user:pass@host/db"
-```
+¹ It's also possible to specify the MongoDB URI as an argument (`mongoct company posts "mongodb://user:pass@host/db"`)
