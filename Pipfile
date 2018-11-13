@@ -5,8 +5,8 @@ name = "pypi"
 
 [packages]
 pymongo = "*"
-"e1839a8" = {path = ".", editable = true}
 dnspython = "*"
+mongoct = {editable = true, path = "."}
 
 [dev-packages]
 pytest = "*"

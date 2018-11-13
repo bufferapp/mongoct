@@ -27,4 +27,4 @@ Changes will start flowing as JSON at the same time they're applied to the `post
 
 You can now pipe the data to another program like [`jq`](https://stedolan.github.io/jq/) or save it to a file for latter processing.
 
-¹ It's also possible to specify the MongoDB URI as an argument (`mongoct company posts "mongodb://user:pass@host/db"`)
+¹ It's also possible to specify the MongoDB URI as an option (`mongoct company posts -u "mongodb://user:pass@host/db"`)
