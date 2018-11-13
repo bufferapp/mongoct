@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 setup(
     name="mongoct",
     packages=find_packages(),
-    version="0.1.0",
+    version="0.1.1",
     description="MongoDB Change Streams tracker",
     author="David Gasquez",
     license="MIT",
